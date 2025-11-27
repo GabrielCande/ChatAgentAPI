@@ -36,7 +36,7 @@ O projeto utiliza um modelo de linguagem local via Ollama:
 
 | Modelo           | Tamanho | Download                  |
 | :--------------- | :------ | :------------------------ |
-| **Llama 3.1 8B** | ~4.7GB  | `ollama pull llama3.1:8b` |
+| **Llama 3.1 8B** | ~4.9GB  | `ollama pull llama3.1:8b` |
 
 ### Hardware Recomendado
 
