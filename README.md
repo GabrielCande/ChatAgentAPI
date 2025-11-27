@@ -245,7 +245,7 @@ ChatAgentAPI/
 │        └── 📁 js/
 │             └── app.js      # JavaScript da interface web
 ├── requirements.txt          # Dependências do projeto
-├── .env                      # Arquivo que deve ser criado com as variáveis de ambiente
+├── .env                      # Arquivo que deve ser criado, onde ficaram as variáveis de ambiente
 ├── .gitignore
 └── README.md
 
