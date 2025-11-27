@@ -1,4 +1,6 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
 import uvicorn
 from dotenv import load_dotenv
@@ -12,6 +14,8 @@ app = FastAPI(
     version="1.0.0"
 )
 
+app.mount("/webui", StaticFiles(directory="webUI", html=True), name="webui")
+
 agent = ChatAgent()
 
 class ChatRequest(BaseModel):
@@ -22,7 +26,7 @@ class ChatResponse(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"message": "API funcionando corretamente"}
+    return FileResponse("webUI/index.html")
 
 @app.get("/health")
 async def health_check():

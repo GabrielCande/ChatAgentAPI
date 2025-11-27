@@ -87,9 +87,6 @@ class ChatAgent:
         for pattern in patterns_to_remove:
             clean_response = clean_response.replace(pattern, "")
         
-        # Tratamento dos espaços extras e quebras de linha
-        clean_response = " ".join(clean_response.split())
-        
         return clean_response
     
     async def _handle_tool_call(self, response):

@@ -1,6 +1,6 @@
 # Chat Agent API
 
-Uma API inteligente de chat construída com **FastAPI** e **Strands Agents**, capaz de realizar **cálculos matemáticos** e responder a **perguntas gerais** utilizando modelos de linguagem local via **Ollama**.
+Uma API inteligente de chat construída com **FastAPI** e **Strands Agents**, capaz de realizar **cálculos matemáticos** e responder a **perguntas gerais** utilizando modelos de linguagem local via **Ollama**. Ademais, foi implementada uma web UI integrada, com tratamento de resposta da API para melhor visualização de seu funcionamento.
 
 ## Sumário
 
@@ -128,6 +128,57 @@ python main.py
 
 ```
 
+### 6. Realizando testes
+
+Para testar o funcionamento da API basta acessar, através de seu browser, a web UI integrada:
+
+```bash
+# URL da web UI:
+http://localhost:8000/webui/
+
+```
+
+Caso queira verificar a raw response gerada é possível de se fazer via a documentação interativa automática da API, gerada pelo FastAPI usando Swagger UI:
+
+```bash
+# URL da documentação interativa:
+http://localhost:8000/docs
+
+```
+
+Para testar utilizando essa interface basta seguir os passos:
+
+- Clique na seção em verde "POST /chat Chat Endpoint" para expandi-la
+- Em seguida clique no botão "Try it out" (primeiro botão a direita)
+- Depois de precionar o botão você verá algo do tipo:
+
+```bash
+{
+  "message": "string"
+}
+
+```
+
+- Altere o conteúdo de "string" para a mensagem que deseja enviar, exemplo:
+
+```bash
+{
+  "message": "Olá, tudo bem?"
+}
+
+```
+
+- Então precione o botão em azul "Execute"
+- Após o carregamento a resposta será gerada e mostrada um pouco mais abaixo, você verá algo do tipo:
+
+```bash
+Response body
+{
+  "response": "Tudo bem! Estou aqui para ajudar. Como posso ajudar você hoje?\n"
+}
+
+```
+
 # Documentação
 
 Links para as documentações:
@@ -145,12 +196,18 @@ Estrutura do projeto:
 ```bash
 ChatAgentAPI/
 ├── 📁 src/
-│   ├── main.py          # Aplicação FastAPI principal
-│   ├── agent.py         # Agente de IA
-│   └── 📁 tools/
-│       └── mathTool.py  # Tool especializada em cálculos
-├── requirements.txt     # Dependências do projeto
-├── .env                 # Variáveis de ambiente
+│   ├── main.py               # Aplicação FastAPI principal
+│   ├── agent.py              # Agente de IA
+│   ├── 📁 tools/
+│   │    └── mathTool.py      # Tool especializada em cálculos
+│   └── 📁 webUI/
+│        ├── index.html       # Página HTML da interface web
+│        ├── 📁 css/
+│        │    └── styles.css  # Estilo css
+│        └── 📁 js/
+│             └── app.js      # JavaScript da interface web
+├── requirements.txt          # Dependências do projeto
+├── .env                      # Variáveis de ambiente
 └── README.md
 
 ```
