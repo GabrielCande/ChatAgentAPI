@@ -206,7 +206,7 @@ Response body
 
 ---
 
-3. É possível também testar diretamente via terminal, basta abrir um novo terminal (além dos 2 necessários para rodar a API) e digitar o seguinte comando:
+3. Caso deseje, é possível testar diretamente via terminal, basta abrir um novo terminal (além dos 2 necessários para rodar a API) e digitar o seguinte comando:
 
 ```bash
 # Basta trocar o campo SUA MENSAGEM AQUI pela mensagem desejada:
