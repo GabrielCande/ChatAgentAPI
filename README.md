@@ -8,7 +8,7 @@ Uma API inteligente de chat construída com **FastAPI** e **Strands Agents**, ca
 - [Requisitos](#requisitos)
 - [Instruções de Execução](#instruções-de-execução)
 - [Documentação](#documentação)
-- [Licensa](#licença)
+- [Licença](#licença)
 
 ## Introdução
 
