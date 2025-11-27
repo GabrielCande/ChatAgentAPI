@@ -1,6 +1,6 @@
 # Chat Agent API
 
-Uma API inteligente de chat construída com **FastAPI** e **Strands Agents**, capaz de realizar **cálculos matemáticos** e responder a **perguntas gerais** utilizando modelos de linguagem local via **Ollama**. Ademais, foi implementada uma web UI integrada, com tratamento de resposta da API para melhor visualização de seu funcionamento.
+Uma API inteligente de chat construída com **FastAPI** e **Strands Agents**, capaz de realizar **cálculos matemáticos** e responder a **perguntas gerais** utilizando modelos de linguagem local via **Ollama**. Foi também implementada uma web UI integrada, com tratamento de resposta da API, para melhor visualização de seu funcionamento.
 
 ## Sumário
 
@@ -107,12 +107,16 @@ pip install -r requirements.txt
 
 Abra um novo CMD para realizar a inicialização da execução do modelo llama3.1:8b instalado:
 
-OBS.: 1. Esse CMD deverá continuar aberto, não o feche; 2. Caso o comando não funcione certifique-se de que o Ollama não está aberto ou em execução.
-
 ```bash
 ollama serve
 
 ```
+
+OBS.:
+
+1. Esse CMD deverá continuar aberto, não o feche;
+
+2. Caso o comando não funcione certifique-se de que o Ollama não está aberto ou em execução.
 
 ### 5. Execução da API
 
