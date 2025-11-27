@@ -161,6 +161,8 @@ http://localhost:8000/webui/
 
 ```
 
+---
+
 Caso queira verificar a raw response gerada é possível de se fazer via a documentação interativa automática da API, gerada pelo FastAPI usando Swagger UI:
 
 ```bash
@@ -201,6 +203,18 @@ Response body
 }
 
 ```
+
+---
+
+É possível também testar diretamente via terminal, basta abrir um novo terminal (além dos 2 necessários para rodar a API) e digitar o seguinte comando:
+
+```bash
+# Basta trocar o campo SUA MENSAGEM AQUI pela mensagem desejada:
+curl -X POST http://localhost:8000/chat -H "Content-Type: application/json" -d "{\"message\": \"SUA MENSAGEM AQUI\"}"
+
+```
+
+OBS.: É possível verificar através do terminal que está rodando a "main.py" todas as respostas das requisições realizadas em tempo real, indepenedente do local e método que utilizou para realiza-las (webUI, fastAPI docs ou terminal).
 
 # Documentação
 
