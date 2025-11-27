@@ -151,7 +151,7 @@ python main.py
 
 ```
 
-### 6. Realizando testes
+### 6. Realizando Testes
 
 1. Para testar o funcionamento da API basta acessar, através de seu browser, a web UI integrada:
 
