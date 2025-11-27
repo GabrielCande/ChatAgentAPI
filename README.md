@@ -55,8 +55,8 @@ Siga os passos abaixo para configurar e executar a Chat Agent API.
 Use o Git para clonar o projeto:
 
 ```bash
-# Clone o repositório
-git clone [https://github.com/seu-usuario/ChatAgentAPI.git](https://github.com/seu-usuario/ChatAgentAPI.git)
+# Vá até o local onde deseja clonar o repositório e execute:
+git clone https://github.com/GabrielCande/ChatAgentAPI
 
 ```
 
@@ -106,6 +106,7 @@ pip install -r requirements.txt
 ### 4. Início do Ollama
 
 Abra um novo CMD para realizar a inicialização da execução do modelo llama3.1:8b instalado:
+
 OBS.: 1. Esse CMD deverá continuar aberto, não o feche; 2. Caso o comando não funcione certifique-se de que o Ollama não está aberto ou em execução.
 
 ```bash
@@ -118,6 +119,7 @@ ollama serve
 Volte para o CMD onde você está no ambiente criado dentro da raiz do diretório do repositório e execute os comandos:
 
 ```bash
+# Em "(venv) C:\seu path\ChatAgentAPI>" execute:
 # Para acessar a pasta src
 cd src
 
