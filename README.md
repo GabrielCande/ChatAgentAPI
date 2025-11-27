@@ -212,6 +212,7 @@ ChatAgentAPI/
 │             └── app.js      # JavaScript da interface web
 ├── requirements.txt          # Dependências do projeto
 ├── .env                      # Variáveis de ambiente
+├── .gitignore
 └── README.md
 
 ```
