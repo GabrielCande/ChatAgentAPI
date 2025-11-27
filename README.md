@@ -1,6 +1,6 @@
 # Chat Agent API
 
-Uma API inteligente de chat construída com **FastAPI** e **Strands Agents**, capaz de realizar **cálculos matemáticos** e responder a **perguntas gerais** utilizando modelo de IA local via **Ollama**. Foi também implementada uma web UI integrada, com tratamento de resposta da API, para melhor visualização de seu funcionamento.
+Uma API inteligente de chat construída com **FastAPI** e **Strands Agents**, capaz de realizar **cálculos matemáticos** e responder a **perguntas gerais** utilizando modelo de linguagem (LLM) local via **Ollama**. Foi também implementada uma web UI integrada, com tratamento de resposta da API, para melhor visualização de seu funcionamento.
 
 ## Sumário
 
