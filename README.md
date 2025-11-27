@@ -103,6 +103,25 @@ pip install -r requirements.txt
 
 ```
 
+Por fim, crie um arquivo denominado ".env" na raiz do diretório do repositório clonado, manualmente ou pelo código seguinte no terminal:
+
+```bash
+# (apenas um exemplo de path)
+cd C:\Gabriel\Github\ChatAgentAPI
+
+# Cria arquivo .env
+type nul > .env
+
+```
+
+Coloque neste arquivo a seguinte configuração:
+
+```bash
+OLLAMA_BASE_URL=http://localhost:11434
+LLM_MODEL=llama3.1:8b
+
+```
+
 ### 4. Início do Ollama
 
 Abra um novo CMD para realizar a inicialização da execução do modelo llama3.1:8b instalado:
