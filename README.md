@@ -80,7 +80,8 @@ ollama run llama3.1:8b
 No CMD navegue até a raiz do diretório onde foi clonado o repositório:
 
 ```bash
-cd C:\Gabriel\Github\ChatAgentAPI # (apenas um exemplo de path)
+# (apenas um exemplo de path)
+cd C:\Gabriel\Github\ChatAgentAPI
 
 ```
 
@@ -244,7 +245,7 @@ ChatAgentAPI/
 │        └── 📁 js/
 │             └── app.js      # JavaScript da interface web
 ├── requirements.txt          # Dependências do projeto
-├── .env                      # Variáveis de ambiente
+├── .env                      # Arquivo que deve ser criado com as variáveis de ambiente
 ├── .gitignore
 └── README.md
 
