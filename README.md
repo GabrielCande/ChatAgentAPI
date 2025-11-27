@@ -153,7 +153,7 @@ python main.py
 
 ### 6. Realizando testes
 
-Para testar o funcionamento da API basta acessar, através de seu browser, a web UI integrada:
+1. Para testar o funcionamento da API basta acessar, através de seu browser, a web UI integrada:
 
 ```bash
 # URL da web UI:
@@ -163,7 +163,7 @@ http://localhost:8000/webui/
 
 ---
 
-Caso queira verificar a raw response gerada é possível de se fazer via a documentação interativa automática da API, gerada pelo FastAPI usando Swagger UI:
+2. Caso queira verificar a raw response gerada é possível de se fazer via a documentação interativa automática da API, gerada pelo FastAPI usando Swagger UI:
 
 ```bash
 # URL da documentação interativa:
@@ -206,7 +206,7 @@ Response body
 
 ---
 
-É possível também testar diretamente via terminal, basta abrir um novo terminal (além dos 2 necessários para rodar a API) e digitar o seguinte comando:
+3. É possível também testar diretamente via terminal, basta abrir um novo terminal (além dos 2 necessários para rodar a API) e digitar o seguinte comando:
 
 ```bash
 # Basta trocar o campo SUA MENSAGEM AQUI pela mensagem desejada:
